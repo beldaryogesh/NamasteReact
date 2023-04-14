@@ -1,35 +1,16 @@
-/*
-<div id="parent">
-  <div id="child">
-    <h1>hello world</h1>
-    <h2>hello 2 world</h2>
-  </div>
-  <div id="child2">
-    <h1>hello world</h1>
-    <h2>hello 2 world</h2>
-  </div>
-</div>;
+import React from "react";
+import ReactDOM  from "react-dom/client";
 
-*/
+
 const parent = React.createElement(
-  "div",
+  "h1",
   { id: "parent" },
-  [React.createElement(
-    "div",
-    { id: "child" },
-   [ React.createElement("h1", {}, "hello world"), 
-   React.createElement("h1", {}, "hello world")]
-  ), React.createElement(
-    "div",
-    { id: "child2" },
-   [ React.createElement("h1", {}, "hello 2 world"), 
-   React.createElement("h1", {}, "hello world")]
-  )]
+  "hello world in reactjs!"
 );
 
 const heading = React.createElement(
   "h1",
-  { id: "heading", xyz: "abc" },
+  { id: "heading" },
   "hello world in react"
 );
 
